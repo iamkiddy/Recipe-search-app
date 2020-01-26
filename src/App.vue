@@ -12,8 +12,8 @@
         <div class="output">
           <div class="card" v-for="(item,index) in results" :key="index">
           <img :src="`https://spoonacular.com/recipeimages/${item.id}90x90.jpg&${item.image}`" alt="receipe image"><br>
-          Recipes name : {{item.title}} <br>
-          Ready in minutes : {{item.readyInMinutes}}
+          <h4>Recipes name :</h4>  {{item.title}} <br>
+          <h4>Ready in minutes :</h4>  {{item.readyInMinutes}}
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default {
   },
   methods:{
     onSubmit(){
-      axios.get(`https://api.spoonacular.com/recipes/search?query=${this.query}&number=3&apiKey=89ec3200076941aea9df44b9e1820f7c`)
+      axios.get(`https://api.spoonacular.com/recipes/search?query=${this.query}&number=9&apiKey=89ec3200076941aea9df44b9e1820f7c`)
       .then((response)=>{
         this.results = response.data.results;
         this.query = '';
@@ -49,6 +49,7 @@ export default {
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+  width:100%;
 }
 #app {
   font-family: "poppins", sans-serif;
@@ -95,16 +96,34 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card{
-  width:400px;
-  height:400px;
-  margin-left:50px;
+  width:350px;
+  height:350px;
+  margin:0px 50px;
   background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   color:#000;
+  margin:30px 45px;
 }
 img{
   width:200px;
   height: 200px;
 }
+@media only screen and (max-width: 600px) {
+  .output{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card{
+    margin: 30px 80px;
+  }
+  .container{
+    position: relative;
+    top:150px;
+  }
+  .search{
+    width:100vw;
+  }
+}
+
 </style>
