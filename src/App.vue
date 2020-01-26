@@ -116,6 +116,7 @@ img{
   .output{
     display: grid;
     grid-template-columns: 1fr;
+    width:100vw;
   }
   .card{
     margin: 30px 0px 30px 27px ;
