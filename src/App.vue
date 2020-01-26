@@ -96,8 +96,8 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card{
-  width:350px;
-  height:350px;
+  width:300px;
+  height:300px;
   margin:0px 50px;
   background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -118,7 +118,7 @@ img{
     grid-template-columns: 1fr;
   }
   .card{
-    margin: 30px;
+    margin: 10px;
   }
   .container{
     position: relative;
