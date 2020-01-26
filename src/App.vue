@@ -97,7 +97,7 @@ body{
 }
 .card{
   width:300px;
-  height:300px;
+  height:350px;
   margin:0px 50px;
   background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
