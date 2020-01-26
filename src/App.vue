@@ -110,12 +110,15 @@ img{
   height: 200px;
 }
 @media only screen and (max-width: 600px) {
+  *{
+    width:100vw;
+  }
   .output{
     display: grid;
     grid-template-columns: 1fr;
   }
   .card{
-    margin: 30px 80px;
+    margin: 30px;
   }
   .container{
     position: relative;
