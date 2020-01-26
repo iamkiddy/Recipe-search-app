@@ -118,7 +118,7 @@ img{
     grid-template-columns: 1fr;
   }
   .card{
-    margin: 25px;
+    margin: 30px;
   }
   .container{
     position: relative;
