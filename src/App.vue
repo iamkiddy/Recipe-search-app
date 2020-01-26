@@ -119,7 +119,7 @@ img{
     width:100vw;
   }
   .card{
-    margin: 30px 0px 30px 27px ;
+    margin: 30px 0px 30px 30px ;
   }
   .container{
     position: relative;
